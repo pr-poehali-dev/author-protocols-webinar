@@ -141,11 +141,7 @@ const Index = () => {
               </Button>
             </div>
 
-            <div className="mt-10 flex items-center gap-6 opacity-50">
-              <span className="text-xs uppercase tracking-widest">Партнёры:</span>
-              <span className="font-display text-lg">Merz</span>
-              <span className="font-display text-lg">Sinclair</span>
-            </div>
+
           </div>
 
           <div className="relative animate-fade-up" style={{ animationDelay: '0.15s' }}>
