@@ -304,11 +304,11 @@ const Index = () => {
             </h2>
             <div className="p-8 rounded-2xl bg-card border border-gold/30 gold-border-glow">
               <div className="flex items-end gap-4 mb-1">
-                <span className="text-muted-foreground line-through text-2xl">15 000 ₽</span>
-                <span className="px-3 py-1 rounded-full bg-pink/15 text-pink text-sm font-semibold">−87%</span>
+                <span className="text-muted-foreground line-through text-2xl">150 000 ₽</span>
+                <span className="px-3 py-1 rounded-full bg-pink/15 text-pink text-sm font-semibold">−90%</span>
               </div>
               <div className="flex items-baseline gap-3 mb-2">
-                <span className="font-display text-5xl font-bold gold-text-gradient">1 990 ₽</span>
+                <span className="font-display text-5xl font-bold gold-text-gradient">15 000 ₽</span>
               </div>
               <p className="text-sm text-muted-foreground mb-6">Цена действует до {SALE_DATE}</p>
               <ul className="space-y-3">
