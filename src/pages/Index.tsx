@@ -19,7 +19,7 @@ import {
 import Countdown from '@/components/Countdown';
 
 const SPEAKER_IMG =
-  'https://cdn.poehali.dev/projects/64724dd3-da37-48fa-9db4-5b04b16664dd/bucket/b0e499a4-1375-4357-bf84-995d52616696.PNG';
+  'https://cdn.poehali.dev/projects/64724dd3-da37-48fa-9db4-5b04b16664dd/bucket/a98ac39c-92ef-46ff-b5ea-b9db4f7a0394.jpg';
 
 const WEBINAR_DATE = new Date('2026-08-19T19:00:00');
 const SALE_DATE = '19 августа';
