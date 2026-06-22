@@ -249,16 +249,9 @@ const Index = () => {
             {cases.map((c) => (
               <CarouselItem key={c.title} className="md:basis-1/2 lg:basis-1/3">
                 <div className="h-full p-7 rounded-2xl bg-card border border-border/60 hover:border-gold/40 transition-colors">
-                  <span className="inline-block px-4 py-1.5 rounded-full bg-gold/15 text-gold font-display text-lg font-semibold mb-5">
-                    {c.age}
-                  </span>
                   {c.img ? (
                     <div className="relative rounded-xl overflow-hidden mb-5">
                       <img src={c.img} alt={c.title} className="w-full object-cover" />
-                      <div className="absolute inset-x-0 bottom-0 flex">
-                        <span className="flex-1 text-center text-[10px] uppercase tracking-widest py-1 bg-background/70 text-muted-foreground backdrop-blur-sm">До</span>
-                        <span className="flex-1 text-center text-[10px] uppercase tracking-widest py-1 bg-gold/20 text-gold backdrop-blur-sm">После</span>
-                      </div>
                     </div>
                   ) : (
                     <div className="grid grid-cols-2 gap-2 mb-5">
@@ -266,7 +259,6 @@ const Index = () => {
                       <div className="aspect-square rounded-lg bg-gradient-to-br from-gold/20 to-pink/10 flex items-center justify-center text-xs text-gold">ПОСЛЕ</div>
                     </div>
                   )}
-                  <h3 className="font-display text-xl font-semibold mb-2">{c.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{c.text}</p>
                 </div>
               </CarouselItem>
