@@ -107,8 +107,8 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* HERO */}
       <section className="relative min-h-screen flex items-center px-5 pt-16 pb-28">
-        <div className="absolute top-0 right-0 w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] rounded-full bg-gold/10 blur-[120px] animate-float-glow pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-pink/10 blur-[120px] animate-float-glow pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] rounded-full blur-[130px] animate-float-glow pointer-events-none" style={{background: 'hsl(220 80% 40% / 0.18)'}} />
+        <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] rounded-full blur-[120px] animate-float-glow pointer-events-none" style={{background: 'hsl(43 74% 56% / 0.12)'}} />
 
         <div className="relative max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
           <div className="animate-fade-up">
