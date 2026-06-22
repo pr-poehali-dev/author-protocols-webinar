@@ -114,11 +114,12 @@ const Index = () => {
           <div className="animate-fade-up">
             <Eyebrow>Онлайн-вебинар · Элона Габуева</Eyebrow>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.4rem] font-bold leading-[1.08]">
-              Инъекционная<br />
-              <span className="gold-text-gradient">архитектура лица</span>
+              Вместо или вместе:<br />
+              <span className="gold-text-gradient">полимолочная кислота</span><br />
+              и гидроксиапатит кальция
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-foreground/90 font-light max-w-lg">
-              Нейромодуляция и пролонгированный лифтинг по протоколам Габуевой.
+              Авторские протоколы Габуевой: нейромодуляция и пролонгированный лифтинг.
             </p>
             <p className="mt-4 text-base text-muted-foreground max-w-lg">
               Секреты работы с Радиесс и ПМК. Как уйти от шаблонов и делать «дорогую» работу с первых сеансов.
