@@ -146,10 +146,12 @@ const Index = () => {
           </div>
 
           <div className="relative animate-fade-up" style={{ animationDelay: '0.15s' }}>
-            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-gold/30 via-transparent to-pink/20 blur-xl" />
-            <div className="relative rounded-[2rem] overflow-hidden border border-gold/20 gold-border-glow">
+            <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-tr from-blue-900/60 via-transparent to-gold/20 blur-2xl" />
+            <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-b from-gold/40 via-gold/10 to-blue-900/60" />
+            <div className="relative rounded-[2rem] overflow-hidden border border-gold/30" style={{boxShadow: '0 0 0 1px hsl(220 80% 30% / 0.5), 0 24px 60px -12px hsl(220 80% 10% / 0.8), 0 0 40px -8px hsl(43 74% 56% / 0.3)'}}>
               <img src={SPEAKER_IMG} alt="Элона Габуева" className="w-full h-full object-cover object-top aspect-[4/5]" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+              <div className="absolute inset-0" style={{background: 'linear-gradient(to bottom, hsl(220 47% 8% / 0.1) 0%, transparent 40%, hsl(222 47% 5% / 0.85) 100%)'}} />
+              <div className="absolute inset-0" style={{background: 'linear-gradient(135deg, hsl(220 80% 40% / 0.12) 0%, transparent 60%)'}} />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="font-display text-2xl font-semibold">Элона Габуева</p>
                 <p className="text-sm text-muted-foreground mt-1">Врач-косметолог · Эксперт по инъекциям</p>
@@ -189,8 +191,10 @@ const Index = () => {
       <Section className="bg-card/40 border-y border-border/50">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           <div className="relative order-2 lg:order-1">
-            <div className="relative rounded-[2rem] overflow-hidden border border-gold/20 gold-border-glow max-w-md mx-auto lg:mx-0">
+            <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-b from-gold/30 via-gold/10 to-blue-900/50" />
+            <div className="relative rounded-[2rem] overflow-hidden border border-gold/30 max-w-md mx-auto lg:mx-0" style={{boxShadow: '0 0 0 1px hsl(220 80% 30% / 0.4), 0 24px 60px -12px hsl(220 80% 10% / 0.7), 0 0 40px -8px hsl(43 74% 56% / 0.25)'}}>
               <img src={SPEAKER_IMG} alt="Элона Габуева в клинике" className="w-full object-cover object-top aspect-square" />
+              <div className="absolute inset-0" style={{background: 'linear-gradient(135deg, hsl(220 80% 40% / 0.15) 0%, transparent 60%)'}} />
             </div>
           </div>
           <div className="order-1 lg:order-2">
