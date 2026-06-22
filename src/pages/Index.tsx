@@ -61,9 +61,9 @@ const program = [
 ];
 
 const cases = [
-  { age: '55+', title: 'Протокол «Ревитализация»', text: 'Радиесс + ПМК — убран птоз, восстановлен овал лица.' },
-  { age: '35+', title: 'Протокол «Био-армирование»', text: 'Сформированы скулы, убрана носогубная складка.' },
-  { age: '40+', title: 'Курс ПМК (3 процедуры)', text: 'Улучшение тургора и цвета кожи, эффект сияния.' },
+  { age: '55+', title: 'Протокол «Ревитализация»', text: 'Радиесс + ПМК — убран птоз, восстановлен овал лица.', img: 'https://cdn.poehali.dev/projects/64724dd3-da37-48fa-9db4-5b04b16664dd/bucket/bec84702-cec2-4cbf-bf8f-f97053d14520.JPG' },
+  { age: '35+', title: 'Протокол «Био-армирование»', text: 'Сформированы скулы, убрана носогубная складка.', img: '' },
+  { age: '40+', title: 'Курс ПМК (3 процедуры)', text: 'Улучшение тургора и цвета кожи, эффект сияния.', img: '' },
 ];
 
 const bonuses = [
@@ -252,14 +252,20 @@ const Index = () => {
                   <span className="inline-block px-4 py-1.5 rounded-full bg-gold/15 text-gold font-display text-lg font-semibold mb-5">
                     {c.age}
                   </span>
-                  <div className="grid grid-cols-2 gap-2 mb-5">
-                    <div className="aspect-square rounded-lg bg-gradient-to-br from-secondary to-muted flex items-center justify-center text-xs text-muted-foreground">
-                      ДО
+                  {c.img ? (
+                    <div className="relative rounded-xl overflow-hidden mb-5">
+                      <img src={c.img} alt={c.title} className="w-full object-cover" />
+                      <div className="absolute inset-x-0 bottom-0 flex">
+                        <span className="flex-1 text-center text-[10px] uppercase tracking-widest py-1 bg-background/70 text-muted-foreground backdrop-blur-sm">До</span>
+                        <span className="flex-1 text-center text-[10px] uppercase tracking-widest py-1 bg-gold/20 text-gold backdrop-blur-sm">После</span>
+                      </div>
                     </div>
-                    <div className="aspect-square rounded-lg bg-gradient-to-br from-gold/20 to-pink/10 flex items-center justify-center text-xs text-gold">
-                      ПОСЛЕ
+                  ) : (
+                    <div className="grid grid-cols-2 gap-2 mb-5">
+                      <div className="aspect-square rounded-lg bg-gradient-to-br from-secondary to-muted flex items-center justify-center text-xs text-muted-foreground">ДО</div>
+                      <div className="aspect-square rounded-lg bg-gradient-to-br from-gold/20 to-pink/10 flex items-center justify-center text-xs text-gold">ПОСЛЕ</div>
                     </div>
-                  </div>
+                  )}
                   <h3 className="font-display text-xl font-semibold mb-2">{c.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{c.text}</p>
                 </div>
