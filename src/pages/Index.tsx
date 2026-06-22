@@ -147,7 +147,7 @@ const Index = () => {
           <div className="relative animate-fade-up" style={{ animationDelay: '0.15s' }}>
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-gold/30 via-transparent to-pink/20 blur-xl" />
             <div className="relative rounded-[2rem] overflow-hidden border border-gold/20 gold-border-glow">
-              <img src={SPEAKER_IMG} alt="Элона Габуева" className="w-full h-full object-cover aspect-[4/5]" />
+              <img src={SPEAKER_IMG} alt="Элона Габуева" className="w-full h-full object-cover object-top aspect-[4/5]" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="font-display text-2xl font-semibold">Элона Габуева</p>
@@ -189,7 +189,7 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-[2rem] overflow-hidden border border-gold/20 gold-border-glow max-w-md mx-auto lg:mx-0">
-              <img src={SPEAKER_IMG} alt="Элона Габуева в клинике" className="w-full object-cover aspect-square" />
+              <img src={SPEAKER_IMG} alt="Элона Габуева в клинике" className="w-full object-cover object-top aspect-square" />
             </div>
           </div>
           <div className="order-1 lg:order-2">
