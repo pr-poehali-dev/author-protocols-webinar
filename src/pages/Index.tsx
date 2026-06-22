@@ -63,7 +63,7 @@ const program = [
 const cases = [
   { age: '55+', title: 'Протокол «Ревитализация»', text: 'Радиесс + ПМК — убран птоз, восстановлен овал лица.', img: 'https://cdn.poehali.dev/projects/64724dd3-da37-48fa-9db4-5b04b16664dd/bucket/bec84702-cec2-4cbf-bf8f-f97053d14520.JPG' },
   { age: '35+', title: 'Протокол «Био-армирование»', text: 'Сформированы скулы, убрана носогубная складка.', img: 'https://cdn.poehali.dev/projects/64724dd3-da37-48fa-9db4-5b04b16664dd/bucket/7ce0517a-217b-4ff9-a1e5-8e2e2c32985f.JPG' },
-  { age: '40+', title: 'Курс ПМК (3 процедуры)', text: 'Улучшение тургора и цвета кожи, эффект сияния.', img: '' },
+  { age: '40+', title: 'Курс ПМК (3 процедуры)', text: 'Улучшение тургора и цвета кожи, эффект сияния.', img: 'https://cdn.poehali.dev/projects/64724dd3-da37-48fa-9db4-5b04b16664dd/bucket/285a8f6b-4eb5-4b46-8416-30162f381db9.JPG' },
 ];
 
 const bonuses = [
