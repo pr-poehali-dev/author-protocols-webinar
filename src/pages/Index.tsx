@@ -473,9 +473,22 @@ const Index = () => {
       </Section>
 
       {/* FOOTER */}
-      <footer className="py-12 px-5 border-t border-border/50 text-center">
-        <p className="font-display text-xl mb-2">Элона Габуева</p>
-        <p className="text-sm text-muted-foreground">ПМК и гидроксиапатит кальция: клинические сценарии · 2026</p>
+      <footer className="py-12 px-5 border-t border-border/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+            <div>
+              <p className="font-display text-xl mb-1">Элона Габуева</p>
+              <p className="text-sm text-muted-foreground">ПМК и гидроксиапатит кальция: клинические сценарии · 2026</p>
+            </div>
+            <div className="text-center md:text-right text-xs text-muted-foreground space-y-1">
+              <p>ИП Габуева Элона Тельмановна</p>
+              <p>ИНН 151606111555 · ОГРН 318774600614428</p>
+              <a href="/oferta" className="inline-block mt-2 text-gold/70 hover:text-gold underline underline-offset-2 transition-colors">
+                Публичная оферта
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
 
       {/* STICKY BAR */}
