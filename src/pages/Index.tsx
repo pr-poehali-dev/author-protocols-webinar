@@ -25,38 +25,41 @@ const WEBINAR_DATE = new Date('2026-08-19T19:00:00');
 const SALE_DATE = '19 августа';
 
 const pains = [
-  'Боитесь давать тяжёлые филлеры из-за риска отёков?',
-  'Не знаете, как совместить ПМК и Радиесс в один день?',
-  'Хотите повысить средний чек до 150 000 ₽ за процедуру?',
+  'Работаете с обоими препаратами, но боитесь их комбинировать?',
+  'Хотите понимать физику и химию глубже, чем написано в инструкции?',
+  'Ищете пролонгированный результат, а не скидки и шаблоны «накачки»?',
+  'Устали от выбора «только ПМК» или «только ГА» — хотите работать всем арсеналом?',
 ];
 
 const credentials = [
-  { icon: 'Award', text: 'Автор техники «Мягкая скула»' },
-  { icon: 'BookOpen', text: 'Спикер международных конгрессов' },
-  { icon: 'GraduationCap', text: 'Член EADV, тренер по Радиесс' },
-  { icon: 'Activity', text: 'Стаж 12 лет, более 5000 протоколов' },
+  { icon: 'Award', text: 'Врач-дерматолог, косметолог — стаж 15 лет' },
+  { icon: 'Globe', text: 'Спикер IMCAS, AMWC, ICCE, COSCON INDIA, SCIENTEX Dubai' },
+  { icon: 'GraduationCap', text: 'Тренер инъекционных методик международной компании' },
+  { icon: 'BookOpen', text: 'Член МООСБТ и АРЭМ. Автор статей ВАК' },
+  { icon: 'Star', text: 'Победитель «Амбассадоры, спикер под ключ»' },
+  { icon: 'Building2', text: 'Основатель клиники El.Beauty.Clinic' },
 ];
 
 const program = [
   {
-    n: '01',
-    title: 'Биохимия красоты',
-    text: 'Радиесс (CaHA) vs ПМК: синергия или антагонизм? Почему коллаген 1 и 3 типа запускается по-разному. Как не нарушить тканевой матрикс.',
+    n: 'АКТ I',
+    title: 'Дуэль — Сравнительная анатомия',
+    text: 'Реология и физика гелей: почему ГА даёт объём мгновенно, а ПМК «включается» через месяц — разбор на УЗИ-снимках. Механизм неоколлагенеза: TLR (ПМК) vs остеоиндукция (ГА). Алгоритм выбора от Элоны по зонам: скулы, нижняя треть, шея, кисти.',
   },
   {
-    n: '02',
-    title: 'Топ-5 авторских протоколов',
-    text: '«Идеальный овал» (Радиесс в глубокие слои) + «Сияние» (ПМК поверхностно). Техника «Бустер-бэкинг» для век и декольте.',
+    n: 'АКТ II',
+    title: 'Дуэт — Синергия',
+    text: 'Комбо-протоколы «в один день»: как Элона избегает отёков и узелков. Техника «Сэндвич»: ГА глубоко на надкостницу (каркас) + ПМК в средние слои (текстура). Тайминг для результата 24+ месяцев — график повторных явок.',
   },
   {
-    n: '03',
-    title: 'Нейромодуляция мимических мышц',
-    text: 'Как ботулотоксин усиливает эффект наполнителей на 70%. Авторский протокол «Скульптор».',
+    n: 'АКТ III',
+    title: 'Осложнения — Самое ценное',
+    text: 'Гранулёмы vs гиперкоррекция: реальные кейсы Элоны с фото ДО и ПОСЛЕ лечения. Работа с тонкой кожей: как не получить «рябь» при ГА и не перестимулировать ПМК. Чек-лист «Красные флаги» — когда комбинация противопоказана.',
   },
   {
-    n: '04',
-    title: 'Осложнения и их коррекция',
-    text: 'Пошаговый алгоритм при васкулярных нарушениях. Работа с гиалуронидазой и контурная пластика неудачных результатов.',
+    n: 'БОНУС',
+    title: 'Разбор ваших клинических случаев',
+    text: 'Элона выберет 3 сложных случая из присланных участниками и разберёт их в прямом эфире. Напишите при регистрации свой кейс с комбинацией ПМК и ГА — получите персональную рекомендацию от международного эксперта.',
   },
 ];
 
@@ -67,22 +70,24 @@ const cases = [
 ];
 
 const bonuses = [
-  { icon: 'FileText', title: 'Гайд «10 ошибок при работе с ПМК»', sub: 'Чек-лист в PDF' },
-  { icon: 'Table', title: 'Таблица совместимости Радиесс', sub: 'С анестетиками и нитями' },
-  { icon: 'PlayCircle', title: 'Мини-курс «Анатомия средней зоны лица»', sub: 'Видеозапись, 20 минут' },
+  { icon: 'FileText', title: 'PDF-схема «Сравнительная таблица ПМК и ГА»', sub: 'Глубины, дозировки, сроки — от Элоны Габуевой' },
+  { icon: 'MessageCircle', title: 'Вопрос лично Элоне в прямом эфире', sub: 'Задайте свой клинический вопрос спикеру' },
+  { icon: 'PlayCircle', title: 'Запись вебинара и презентация', sub: 'Остаётся у вас навсегда' },
 ];
 
 const included = [
   'Доступ к прямому эфиру',
-  'Запись вебинара на 48 часов',
-  'Презентация со слайдами',
-  'Сертификат (4 балла НМО)',
+  'Запись вебинара и презентация в подарок',
+  '3 рабочих протокола комбинации 40+, 50+, 60+',
+  'Точные дозировки на каждую зону в мл',
+  'Чек-лист «Ошибки позиционирования»',
 ];
 
 const faq = [
-  { q: 'Буду ли я видеть спикера?', a: 'Да, трансляция идёт с двух камер: общий план спикера и крупный план на препарат и зону работы.' },
-  { q: 'Что если не успею на эфир?', a: 'Вы получите запись вебинара на 3 дня. Сможете пересмотреть материал в удобное время.' },
-  { q: 'Нужно ли покупать препараты?', a: 'Нет. На вебинаре мы работаем на фантомах и анатомических схемах. Никаких затрат на материалы.' },
+  { q: 'Кому подходит этот вебинар?', a: 'Врачам-косметологам, которые уже работают с ПМК или гидроксиапатитом кальция и хотят освоить их грамотную комбинацию в клинической практике.' },
+  { q: 'Что если не успею на эфир?', a: 'Вы получите запись вебинара и презентацию. Сможете изучить материал в удобное время.' },
+  { q: 'Элона разберёт мой кейс?', a: 'При регистрации напишите кратко свой сложный случай с комбинацией ПМК и ГА. Элона выберет 3 кейса для разбора в прямом эфире и даст персональную рекомендацию.' },
+  { q: 'Нужно ли покупать препараты?', a: 'Нет. Вебинар посвящён клинической логике и протоколам — теория, кейсы, разбор УЗИ-снимков. Никаких затрат на материалы.' },
 ];
 
 const Section = ({ id, children, className = '' }: { id?: string; children: React.ReactNode; className?: string }) => (
@@ -158,29 +163,56 @@ const Index = () => {
         </div>
       </section>
 
+      {/* PERSONAL ADDRESS */}
+      <Section className="border-t border-border/50 bg-card/40">
+        <div className="max-w-3xl mx-auto">
+          <div className="relative p-8 sm:p-10 rounded-2xl border border-gold/20" style={{background: 'linear-gradient(135deg, hsl(220 40% 8% / 0.8), hsl(222 47% 5% / 0.95))'}}>
+            <div className="absolute top-6 left-8 font-display text-7xl text-gold/15 leading-none select-none">"</div>
+            <p className="text-lg sm:text-xl font-display font-semibold text-foreground mb-6 relative">
+              15 лет я была на поле боя. Теперь я знаю, как остановить войну между препаратами.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              За плечами — тысячи инъекций, сотни осложнений, превращённых в опыт, и десятки международных конгрессов. Везде я видела одно: врачи делятся на два лагеря. «Я работаю ТОЛЬКО на ПМК» или «ТОЛЬКО на гидроксиапатите».
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-6">
+              Но пациенту всё равно, как называется молекула. Ему важен результат. На этом вебинаре я сниму халат тренера и надену халат практикующего врача. Разберём реальные клинические сценарии. Без рекламы брендов. Только биология, анатомия и мой опыт.
+            </p>
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 rounded-full gold-gradient flex items-center justify-center shrink-0">
+                <Icon name="User" size={18} className="text-primary-foreground" />
+              </div>
+              <div>
+                <p className="font-semibold text-foreground">Элона Габуева</p>
+                <p className="text-sm text-muted-foreground">Врач-дерматолог, косметолог · 15 лет практики</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* PAINS */}
       <Section className="border-t border-border/50">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <Eyebrow>Знакомо?</Eyebrow>
           <h2 className="font-display text-3xl sm:text-4xl font-bold">
-            Устали от шаблонов? Ищете свою <span className="gold-text-gradient">«фишку»?</span>
+            Вы выбираете лагерь — <span className="gold-text-gradient">а пациент ждёт результат</span>
           </h2>
         </div>
-        <div className="grid gap-5 max-w-3xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
           {pains.map((p) => (
             <div
               key={p}
               className="flex items-start gap-4 p-6 rounded-2xl bg-card border border-border/60 hover:border-gold/30 transition-colors"
             >
               <span className="shrink-0 w-10 h-10 rounded-full bg-pink/15 flex items-center justify-center">
-                <Icon name="X" size={18} className="text-pink" />
+                <Icon name="HelpCircle" size={18} className="text-pink" />
               </span>
-              <p className="text-lg text-foreground/90 pt-1.5">{p}</p>
+              <p className="text-base text-foreground/90 pt-1.5">{p}</p>
             </div>
           ))}
         </div>
         <p className="text-center mt-12 text-xl font-display text-gold">
-          На вебинаре разберём 5 протоколов, которые решают эти задачи.
+          На вебинаре Элона даст систему, а не гадание. КОГДА, КУДА и В КАКОЙ ПОСЛЕДОВАТЕЛЬНОСТИ — по реальным кейсам.
         </p>
       </Section>
 
@@ -196,17 +228,19 @@ const Index = () => {
           </div>
           <div className="order-1 lg:order-2">
             <Eyebrow>О спикере</Eyebrow>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">
-              Кто будет учить?
+            <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+              Габуева Элона Тельмановна
             </h2>
-            <p className="text-lg text-foreground/90 font-light leading-relaxed">
-              Врач-дерматовенеролог, косметолог. Эксперт по инъекционным методикам.
-              Член EADV. Тренер по Радиесс и Ревитлайт.
+            <p className="text-lg text-foreground/90 font-light leading-relaxed mb-3">
+              Имя, которое звучит на ведущих мировых площадках эстетической медицины. Это не просто лектор — это врач, который сам создаёт протоколы, а не пересказывает инструкции.
             </p>
-            <div className="grid sm:grid-cols-2 gap-4 mt-8">
+            <p className="text-base text-muted-foreground italic mb-8">
+              «Я говорю не "как красиво написано в буклете", а "как это работает в реальной коже под моим ультразвуком"»
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
               {credentials.map((c) => (
                 <div key={c.text} className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border/60">
-                  <Icon name={c.icon} size={22} className="text-gold shrink-0" />
+                  <Icon name={c.icon} size={20} className="text-gold shrink-0" />
                   <span className="text-sm text-foreground/90">{c.text}</span>
                 </div>
               ))}
@@ -220,8 +254,9 @@ const Index = () => {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <Eyebrow>Программа</Eyebrow>
           <h2 className="font-display text-3xl sm:text-4xl font-bold">
-            Научный план вебинара: <span className="gold-text-gradient">120 минут практики</span>
+            4 клинических сценария <span className="gold-text-gradient">из практики Элоны</span>
           </h2>
+          <p className="mt-4 text-muted-foreground text-lg">Без рекламы брендов. Только биология, анатомия и 15-летний опыт</p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {program.map((p) => (
@@ -270,12 +305,58 @@ const Index = () => {
         </Carousel>
       </Section>
 
+      {/* RESULTS */}
+      <Section>
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <Eyebrow>Что вы получите</Eyebrow>
+          <h2 className="font-display text-3xl sm:text-4xl font-bold">
+            4 результата после вебинара — <span className="gold-text-gradient">система вместо гаданий</span>
+          </h2>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {[
+            { n: '1', title: 'Система вместо гаданий', text: 'Разделите препараты не на «плохие/хорошие», а на зоны инъекций.' },
+            { n: '2', title: '3 рабочих протокола комбинации', text: 'Для возрастов 40+, 50+, 60+ — от практикующего врача.' },
+            { n: '3', title: 'Точные дозировки', text: 'В мл на каждую зону — без перебора и недовольных пациентов.' },
+            { n: '4', title: 'Чек-лист «Ошибки позиционирования»', text: 'Как не сделать из дуэта дуэль с осложнениями.' },
+          ].map((r) => (
+            <div key={r.n} className="flex gap-5 p-7 rounded-2xl bg-card border border-border/60 hover:border-gold/30 transition-colors">
+              <span className="font-display text-4xl font-bold gold-text-gradient shrink-0 leading-none">{r.n}</span>
+              <div>
+                <h3 className="font-display text-lg font-semibold mb-1">{r.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{r.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* REVIEWS */}
+      <Section className="bg-card/40 border-y border-border/50">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <Eyebrow>Отзывы коллег</Eyebrow>
+          <h2 className="font-display text-3xl sm:text-4xl font-bold">Что говорят <span className="gold-text-gradient">врачи об Элоне</span></h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="p-8 rounded-2xl bg-card border border-border/60 hover:border-gold/30 transition-colors">
+            <p className="text-foreground/90 leading-relaxed mb-6">«Я ездила на IMCAS специально послушать Элону. После её лекции я пересмотрела все протоколы по ПМК. Результаты улучшились на 30%.»</p>
+            <p className="text-sm text-gold font-semibold">Врач-косметолог</p>
+            <p className="text-xs text-muted-foreground">Стаж 10 лет</p>
+          </div>
+          <div className="p-8 rounded-2xl bg-card border border-border/60 hover:border-gold/30 transition-colors">
+            <p className="text-foreground/90 leading-relaxed mb-6">«Элона — единственный тренер, кто говорит про осложнения открыто. Показывает свои ошибки и пути исправления. Это дорогого стоит.»</p>
+            <p className="text-sm text-gold font-semibold">Врач-дерматовенеролог</p>
+            <p className="text-xs text-muted-foreground">Стаж 7 лет</p>
+          </div>
+        </div>
+      </Section>
+
       {/* BONUSES */}
       <Section>
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <Eyebrow>Подарки за регистрацию</Eyebrow>
+          <Eyebrow>Бонусы сразу после регистрации</Eyebrow>
           <h2 className="font-display text-3xl sm:text-4xl font-bold">
-            Забирай файлы на <span className="gold-text-gradient">25 000 ₽</span> в подарок
+            Получите материалы <span className="gold-text-gradient">мгновенно</span>
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -325,12 +406,17 @@ const Index = () => {
 
           {/* Form */}
           <div className="p-8 rounded-2xl bg-card border border-border/60">
-            <h3 className="font-display text-2xl font-semibold mb-1">Регистрация на вебинар</h3>
-            <p className="text-sm text-muted-foreground mb-6">Заполните данные — пришлём доступ на email</p>
+            <h3 className="font-display text-2xl font-semibold mb-1">Занять место на вебинар</h3>
+            <p className="text-sm text-muted-foreground mb-6">Заполните данные — пришлём доступ на email. Опишите ваш кейс — Элона разберёт 3 лучших в эфире</p>
             <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
               <Input placeholder="Ваше имя" className="bg-secondary/60 border-border/60 h-12" />
               <Input placeholder="Телефон" type="tel" className="bg-secondary/60 border-border/60 h-12" />
               <Input placeholder="Email" type="email" className="bg-secondary/60 border-border/60 h-12" />
+              <textarea
+                placeholder="Ваш сложный случай с комбинацией ПМК и ГА (анонимно, необязательно)"
+                className="w-full bg-secondary/60 border border-border/60 rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground resize-none focus:outline-none focus:ring-1 focus:ring-gold/50"
+                rows={3}
+              />
               <label className="flex items-start gap-3 cursor-pointer">
                 <Checkbox checked={agree} onCheckedChange={(v) => setAgree(Boolean(v))} className="mt-0.5" />
                 <span className="text-xs text-muted-foreground leading-relaxed">
@@ -341,7 +427,7 @@ const Index = () => {
                 type="submit"
                 className="w-full gold-gradient text-primary-foreground font-semibold text-base py-6 rounded-xl gold-glow hover:opacity-90 transition-opacity"
               >
-                Забронировать место со скидкой
+                Занять место на вебинар с Элоной
               </Button>
             </form>
           </div>
@@ -366,10 +452,30 @@ const Index = () => {
         </Accordion>
       </Section>
 
+      {/* FINAL CTA */}
+      <Section className="text-center">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-xs uppercase tracking-[0.35em] text-gold/80 mb-5">Финал дуэли</p>
+          <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+            Когда дуэль заканчивается,<br />начинается <span className="gold-text-gradient">дуэт</span>
+          </h2>
+          <p className="text-muted-foreground text-lg mb-8">
+            Под руководством Элоны Габуевой. Количество мест ограничено — Элона отвечает на вопросы только в живом эфире.
+          </p>
+          <Button
+            onClick={scrollToForm}
+            className="gold-gradient text-primary-foreground font-semibold text-lg px-10 py-7 rounded-xl gold-glow hover:opacity-90 hover:scale-[1.02] transition-all"
+          >
+            Занять место на вебинар с Элоной
+          </Button>
+          <p className="mt-4 text-sm text-muted-foreground">Увидимся на дуэте!</p>
+        </div>
+      </Section>
+
       {/* FOOTER */}
       <footer className="py-12 px-5 border-t border-border/50 text-center">
         <p className="font-display text-xl mb-2">Элона Габуева</p>
-        <p className="text-sm text-muted-foreground">Авторские протоколы Радиесс + ПМК · 2026</p>
+        <p className="text-sm text-muted-foreground">ПМК и гидроксиапатит кальция: клинические сценарии · 2026</p>
       </footer>
 
       {/* STICKY BAR */}
